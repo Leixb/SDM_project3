@@ -33,5 +33,5 @@ stdenv.mkDerivation {
   outputHashAlgo = "sha256";
   outputHashMode = "recursive";
   # replace this with the correct SHA256
-  outputHash = "sha256-547+z5BjPBBgQ2A0/h3cqtDsnuQ6F+XVys0pNEKdDwA=";
+  outputHash = "sha256-D2pAy0uAvme56YscIn470t9B08d0eQfWL8nSLlepZ/s=";
 }
