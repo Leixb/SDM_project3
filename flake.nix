@@ -15,14 +15,19 @@
     pkgs = import nixpkgs { inherit system; };
     jar = pkgs.callPackage ./.jar.nix { };
     jdtls = pkgs.callPackage ./.jdtls.nix { };
+    protege = pkgs.writeShellScriptBin "protege" ''
+      _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd" ${pkgs.protege-distribution}/bin/run-protege
+    '';
   in
   rec {
     devShells.default = with pkgs; mkShellNoCC {
-      name = "java";
+      name = "java jena protege";
+
       buildInputs = [
         jdk jdtls # JDTLS requires java > 1.11
 
         apache-jena
+        protege
       ];
     };
 
