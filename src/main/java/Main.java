@@ -102,33 +102,33 @@ class Main {
         }
     }
 
+    private static CSVReader getCSVReader(String filename) {
+        CSVReader reader = null;
+        try {
+            reader = new CSVReaderBuilder(new BufferedReader(new FileReader(filename)))
+                .withCSVParser(new CSVParserBuilder().withSeparator(';').build()).build();
+        } catch (FileNotFoundException e) {
+            System.err.println("ERROR: File not found: " + filename);
+            e.printStackTrace();
+            System.exit(1);
+        }
+
+        return reader;
+    }
+
     // Parse CSV file and add resouces with properites to the model
     private static void addNodes(String nodeName, String filename) {
 
-        BufferedReader reader = null;
-
-        try {
-            reader = new BufferedReader(new FileReader(filename));
-        } catch (FileNotFoundException e) {
-            System.err.println("File not found: " + filename);
-            e.printStackTrace();
-        }
-
-        CSVReader csvReader = new CSVReaderBuilder(reader)
-            .withCSVParser(new CSVParserBuilder()
-            .withSeparator(';')
-            .build()).build();
-
-        Iterator<String[]> parser = csvReader.iterator();
+        Iterator<String[]> csvRows = getCSVReader(filename).iterator();
 
         String objectURI = baseURI + "/" + nodeName;
 
-        List<Property> properties = Stream.of(parser.next()) // Take header as first line
+        List<Property> properties = Stream.of(csvRows.next()) // Take header as first line
             .skip(1) //Skip the first column which is the ID
             .map(s -> model.createProperty(baseURI + "/" + s)) // Create property for each column
             .collect(java.util.stream.Collectors.toList());
 
-        parser.forEachRemaining(row -> {
+        csvRows.forEachRemaining(row -> {
             Iterator<String> it = Arrays.asList(row).iterator();
             if (!it.hasNext()) {
                 return;
@@ -153,14 +153,6 @@ class Main {
             });
 
         });
-
-        try {
-            csvReader.close();
-            reader.close();
-        } catch (IOException e) {
-            System.err.println("Error closing file");
-            e.printStackTrace();
-        }
 
     }
 }
