@@ -76,7 +76,6 @@ class Main {
                 String sourceName = parts[2];
                 String destName = parts[3];
                 String filename = parts[4];
-                // addEdges(edgeName, sourceName, destName, filename);
                 edges.add(new Edge(edgeName, sourceName, destName, filename));
             } else if (arg.startsWith("--output=")) {
                 String[] parts = arg.split("=");
@@ -92,7 +91,7 @@ class Main {
 
 
         nodes.forEach(n -> addNodes(n.name, n.filename));
-        // edges.forEach(e -> addEdges(e.name, e.source, e.destinatio, e.filename));
+        edges.forEach(e -> addEdges(e.name, e.source, e.destination, e.filename));
 
         try {
             BufferedWriter out = new BufferedWriter(new FileWriter(outputFilename));
@@ -154,5 +153,27 @@ class Main {
 
         });
 
+    }
+
+    private static void addEdges(String edgeName, String source, String destination, String filename) {
+        Iterator<String[]> csvRows = getCSVReader(filename).iterator();
+        String objectURI = baseURI + "/" + edgeName;
+
+        Property property = model.createProperty(objectURI);
+
+        csvRows.forEachRemaining(row -> {
+            if (row.length != 2) {
+                return;
+            }
+
+            String sourceId = row[0];
+            String destId = row[1];
+
+            Resource sourceObject = model.createResource(baseURI + "/" + source + "#" + sourceId);
+            Resource destObject = model.createResource(baseURI + "/" + destination + "#" + destId);
+
+            sourceObject.addProperty(property, destObject);
+
+        });
     }
 }
