@@ -11,8 +11,8 @@ let
 in
 
 stdenv.mkDerivation rec {
-  pname = "hello";
-  version = "0.0.1-SNAPSHOT";
+  pname = "sdm-lab";
+  version = "3.0.0-SNAPSHOT";
 
   src = ./.;
 
