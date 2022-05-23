@@ -1,7 +1,7 @@
 { lib
 , stdenv
 , maven
-, jre8
+, jre
 , makeWrapper
 , callPackage
 }:
@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     classpath=$(find ${repository} -name "*.jar" -printf ':%h/%f');
     install -Dm644 target/${pname}-${version}.jar $out/share/java/${pname}-${version}.jar
 
-    makeWrapper ${jre8}/bin/java $out/bin/${pname} \
+    makeWrapper ${jre}/bin/java $out/bin/${pname} \
       --add-flags "-classpath $out/share/java/${pname}-${version}.jar:''${classpath#:}" \
       --add-flags "Main"
 
