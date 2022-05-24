@@ -24,7 +24,7 @@ class Main {
 
     private static Model model = null;
 
-    private static final String baseURI = "http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#";
+    private static String baseURI = "http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#";
     private static String outputFilename = "papers.rdf";
 
     private static interface ModelMember {
@@ -187,6 +187,11 @@ class Main {
                 final String[] parts = arg.split("=");
                 if (parts.length > 1) {
                     outputFilename = parts[1];
+                }
+            } else if (arg.startsWith("--base=")) {
+                final String[] parts = arg.split("=");
+                if (parts.length > 1) {
+                    baseURI = parts[1];
                 }
             } else {
                 System.out.println("Unknown argument: " + arg);
