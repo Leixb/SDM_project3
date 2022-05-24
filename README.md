@@ -8,7 +8,7 @@ Hands-on lab on knowledge graphs.
 
 This repo provides the data and code to generate the RDFS files required in the
 assignment. The data is obtained from [Aminer](https://www.aminer.org/citation)
-using our [json parser from lab 1](https://github.com/Leixb/Aminer-citations-to-csv-for-neo4j).
+using our [json parser from lab 1](https://github.com/Leixb/Aminer-citations-to-csv-for-neo4j/tree/sdm-lab3).
 The CSV files where modified to suit our needs and we only took the data from
 the first 10k entries instead of the full 5 million from the dataset reduce the
 processing time.
