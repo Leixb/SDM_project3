@@ -18,6 +18,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
 
 class Main {
 
@@ -64,6 +65,11 @@ class Main {
                 }
                 String nodeName = parts[1];
                 String filename = parts[2];
+                if (!Files.exists(java.nio.file.Paths.get(filename))) {
+                    System.err.println("ERROR: Node file " + filename + " does not exist");
+                    System.exit(1);
+                }
+
                 nodes.add(new Node(nodeName, filename));
             } else if (arg.startsWith("--edge=")) {
                 String[] parts = arg.split("=");
@@ -76,6 +82,11 @@ class Main {
                 String sourceName = parts[2];
                 String destName = parts[3];
                 String filename = parts[4];
+                if (!Files.exists(java.nio.file.Paths.get(filename))) {
+                    System.err.println("ERROR: Edge file " + filename + " does not exist");
+                    System.exit(1);
+                }
+
                 edges.add(new Edge(edgeName, sourceName, destName, filename));
             } else if (arg.startsWith("--output=")) {
                 String[] parts = arg.split("=");
