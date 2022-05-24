@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.stream.Stream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -33,19 +32,24 @@ class Main {
     }
 
     private static class NodeFile implements ModelMember {
-        String name, filename;
+        String name, filename, nodeParent;
 
-        public NodeFile(String nodeName, String filename) {
+        public NodeFile(String nodeParent, String nodeName, String filename) {
             this.name = nodeName;
             this.filename = filename;
+            this.nodeParent = nodeParent;
         }
 
         // Parse CSV file and add resouces with properites to the model
         public void addToModel() {
 
+            System.err.println("Processing file: " + filename);
+
             Iterator<String[]> csvRows = getCSVReader(filename).iterator();
 
-            String objectURI = baseURI + name;
+            String objectURI = baseURI + ((nodeParent == null || nodeParent.isBlank())? name : nodeParent);
+
+            Resource resourceType = model.createResource(baseURI + name);
 
             List<Property> properties = Stream.of(csvRows.next()) // Take header as first line
                 .skip(1) //Skip the first column which is the ID
@@ -63,7 +67,7 @@ class Main {
                     return;
                 }
 
-                Resource object = model.createResource(objectURI + "-" + id);
+                Resource object = model.createResource(objectURI + "-" + id, resourceType);
 
                 properties.forEach(p -> {
                     if (!it.hasNext()) {
@@ -149,13 +153,18 @@ class Main {
                     System.exit(1);
                 }
                 String nodeName = parts[1];
+                String nodeParent = null;
+                if (nodeName.contains(":")) {
+                    nodeParent = nodeName.split(":")[0];
+                    nodeName = nodeName.split(":")[1];
+                }
                 String filename = parts[2];
                 if (!Files.exists(java.nio.file.Paths.get(filename))) {
                     System.err.println("ERROR: Node file " + filename + " does not exist");
                     System.exit(1);
                 }
 
-                modelMembers.add(new NodeFile(nodeName, filename));
+                modelMembers.add(new NodeFile(nodeParent, nodeName, filename));
             } else if (arg.startsWith("--edge=")) {
                 String[] parts = arg.split("=");
                 if (parts.length != 5) {
