@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.stream.Stream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -24,7 +25,7 @@ class Main {
 
     private static Model model = null;
 
-    private static final String baseURI = "https://localhost/papers";
+    private static final String baseURI = "http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#";
     private static String outputFilename = "papers.rdf";
 
     private static interface ModelMember {
@@ -44,11 +45,11 @@ class Main {
 
             Iterator<String[]> csvRows = getCSVReader(filename).iterator();
 
-            String objectURI = baseURI + "/" + name;
+            String objectURI = baseURI + name;
 
             List<Property> properties = Stream.of(csvRows.next()) // Take header as first line
                 .skip(1) //Skip the first column which is the ID
-                .map(s -> model.createProperty(baseURI + "/" + s)) // Create property for each column
+                .map(s -> model.createProperty(baseURI + s)) // Create property for each column
                 .collect(java.util.stream.Collectors.toList());
 
             csvRows.forEachRemaining(row -> {
@@ -62,7 +63,7 @@ class Main {
                     return;
                 }
 
-                Resource object = model.createResource(objectURI + "#" + id);
+                Resource object = model.createResource(objectURI + "-" + id);
 
                 properties.forEach(p -> {
                     if (!it.hasNext()) {
@@ -92,7 +93,7 @@ class Main {
 
         public void addToModel() {
             Iterator<String[]> csvRows = getCSVReader(filename).iterator();
-            String objectURI = baseURI + "/" + name;
+            String objectURI = baseURI + name;
 
             Property property = model.createProperty(objectURI);
 
@@ -104,8 +105,8 @@ class Main {
                 String sourceId = row[0];
                 String destId = row[1];
 
-                Resource sourceObject = model.createResource(baseURI + "/" + source + "#" + sourceId);
-                Resource destObject = model.createResource(baseURI + "/" + destination + "#" + destId);
+                Resource sourceObject = model.createResource(baseURI + source + "-" + sourceId);
+                Resource destObject = model.createResource(baseURI + destination + "-" + destId);
 
                 sourceObject.addProperty(property, destObject);
 
@@ -192,6 +193,10 @@ class Main {
         return modelMembers;
     }
 
+    private static Model loadSchema() {
+        return ModelFactory.createDefaultModel().read(Main.class.getResourceAsStream("/sdmlab3.owl"), null, "RDF/XML");
+    }
+
     // Program entrypoint
     //
     // Usage: java -jar papers.jar [--node=nodename=filename.csv]... [--edge=relationShipName=sourceName=destName=filename.csv]... [--output=output_file]
@@ -201,8 +206,18 @@ class Main {
 
         // Create empty model
         model = ModelFactory.createDefaultModel();
+        model.setNsPrefix("", baseURI);
+
         // Populate model with data from files in the modelMembers list
         modelMembers.forEach(ModelMember::addToModel);
+
+        // Merge schema into model
+        Model schema = loadSchema();
+        model = ModelFactory.createUnion(schema, model);
+
+        // Alternatively, we could use createRDFSModel() to merge our model with
+        // the schema and infer all the data, but it's much slower:
+        // model = ModelFactory.createRDFSModel(model, schema);
 
         // Write model to file
         saveRDF(outputFilename);
