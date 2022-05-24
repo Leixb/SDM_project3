@@ -47,14 +47,14 @@ class Main {
 
             final Iterator<String[]> csvRows = getCSVReader(filename).iterator();
 
-            final String objectURI = baseURI + ((nodeParent == null || nodeParent.isBlank())? name : nodeParent);
+            final String objectURI = baseURI + ((nodeParent == null || nodeParent.isBlank()) ? name : nodeParent);
 
             final Resource resourceType = model.createResource(baseURI + name);
 
             final List<Property> properties = Stream.of(csvRows.next()) // Take header as first line
-                .skip(1) //Skip the first column which is the ID
-                .map(s -> model.createProperty(baseURI + s)) // Create property for each column
-                .collect(java.util.stream.Collectors.toList());
+                    .skip(1) // Skip the first column which is the ID
+                    .map(s -> model.createProperty(baseURI + s)) // Create property for each column
+                    .collect(java.util.stream.Collectors.toList());
 
             csvRows.forEachRemaining(row -> {
                 final Iterator<String> it = Arrays.asList(row).iterator();
@@ -122,7 +122,7 @@ class Main {
         CSVReader reader = null;
         try {
             reader = new CSVReaderBuilder(new BufferedReader(new FileReader(filename)))
-                .withCSVParser(new CSVParserBuilder().withSeparator(';').build()).build();
+                    .withCSVParser(new CSVParserBuilder().withSeparator(';').build()).build();
         } catch (final FileNotFoundException e) {
             System.err.println("ERROR: File not found: " + filename);
             e.printStackTrace();
@@ -168,7 +168,8 @@ class Main {
             } else if (arg.startsWith("--edge=")) {
                 final String[] parts = arg.split("=");
                 if (parts.length != 5) {
-                    System.err.println("ERROR: Edge arguments require 4 parameters: --edge=relationShipName=sourceName=destName=filename.csv");
+                    System.err.println(
+                            "ERROR: Edge arguments require 4 parameters: --edge=relationShipName=sourceName=destName=filename.csv");
                     System.exit(1);
                 }
 
@@ -208,7 +209,9 @@ class Main {
 
     // Program entrypoint
     //
-    // Usage: java -jar papers.jar [--node=nodename=filename.csv]... [--edge=relationShipName=sourceName=destName=filename.csv]... [--output=output_file]
+    // Usage: java -jar papers.jar [--node=nodename=filename.csv]...
+    // [--edge=relationShipName=sourceName=destName=filename.csv]...
+    // [--output=output_file]
     public static void main(final String[] args) {
 
         final List<ModelMember> modelMembers = parseArgs(args);
