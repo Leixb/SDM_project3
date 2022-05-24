@@ -1,0 +1,1111 @@
+ID;Name
+12;Agronomy
+13;Moisture
+14;Hydrology
+15;Environmental science
+16;Dry weight
+17;Water content
+18;Stomatal conductance
+19;Transpiration
+20;Irrigation
+21;Soil water
+22;Canopy
+28;Intelligent character recognition
+29;Pattern recognition
+30;Computer science
+31;Feature (computer vision)
+32;Document processing
+33;Handwriting recognition
+34;Optical character recognition
+35;Feature extraction
+36;Feature (machine learning)
+37;Artificial intelligence
+38;Intelligent word recognition
+50;Delay calculation
+51;Timing failure
+52;Monte Carlo method
+53;Sequential logic
+54;Statistical static timing analysis
+55;Shortest path problem
+56;Algorithm
+57;Clock skew
+58;Static timing analysis
+59;Statistics
+170;XML Base
+171;World Wide Web
+172;XML framework
+173;XML Encryption
+174;Efficient XML Interchange
+175;SGML
+176;Programming language
+177;Software engineering
+178;XML
+179;XML validation
+180;cXML
+211;Virtualization
+212;Service level objective
+213;Virtual machine
+214;Testbed
+215;Quality of service
+216;Provisioning
+217;Resource allocation
+218;Web application
+219;Operating system
+220;Distributed computing
+236;Changeover
+237;Transport engineering
+238;Planner
+239;New delhi
+240;Public transport
+241;Schedule
+242;Local bus
+243;Engineering
+244;Metropolitan area
+322;Information system
+323;Mobile device
+324;MOLAP
+325;Online analytical processing
+326;Data access
+327;Data cube
+328;Scalability
+329;Client–server model
+1453;Group communication protocol
+1454;The Internet
+2985;Intelligent decision
+2986;Multiple criteria
+2987;Intelligent decision support system
+2988;Support system
+2989;Decision support system
+2990;R-CAST
+2991;Process management
+4400;Revenue
+4401;Transparency (graphic)
+4402;Civil society
+4403;Corporate governance
+4404;Economic growth
+4405;Information revolution
+4406;Call centre
+4407;Interactive kiosk
+4408;Business
+4409;E-governance
+5643;Business model
+5644;Information infrastructure
+6472;Mobile computing
+6473;Mobile IP
+6474;Soft handover
+6475;Packet loss rate
+6476;Computer network
+6477;Real-time computing
+6478;Router
+6479;Latency (engineering)
+6480;Mobile telephony
+6481;Handover
+6642;Interleaved memory
+6643;Computer architecture
+6644;Uniform memory access
+6645;Physical address
+6646;Cache-only memory architecture
+6647;Memory management
+6648;Non-uniform memory access
+6649;Memory map
+6650;Memory architecture
+6651;Embedded system
+7415;Heuristic
+7416;Microeconomics
+7417;Purchasing
+7418;restrict
+7419;Profit (economics)
+7983;Emergency procedure
+7984;Concurrency
+7985;Pure mathematics
+7986;Real systems
+7987;Mathematics
+7988;Morphism
+8218;Formal language
+8225;Fifth-generation programming language
+8226;Second-generation programming language
+8227;Comparison of multi-paradigm programming languages
+8228;Component-based software engineering
+8229;Software construction
+8230;Programming language theory
+8231;Computer programming
+8232;Software development
+8429;Health care
+8430;Population
+8431;Age distribution
+8432;Elderly people
+8433;Operational system
+8434;Staff management
+8435;Heuristics
+8436;Operations management
+8473;Combinatorial method
+8474;Rectangle
+8475;Yen's algorithm
+8476;Suurballe's algorithm
+8477;Shortest Path Faster Algorithm
+8478;Dijkstra's algorithm
+8479;K shortest path routing
+8665;Distributive property
+8666;Information processing
+8667;Algebra
+8668;Lattice (order)
+8669;Closure operator
+8670;Cardinality
+8671;Order structure
+8672;Fuzzy set
+8673;Fuzzy control system
+9348;Data science
+9349;Robot learning
+9350;Learning sciences
+9351;Multi-task learning
+9352;Inductive transfer
+9353;Action learning
+9354;Organizational learning
+9355;Sequence learning
+9356;Proactive learning
+9357;Machine learning
+9622;Middleware
+9623;Mobile ad hoc network
+9624;Ad hoc wireless distribution service
+9625;Adaptive quality of service multi-hop routing
+9626;Optimized Link State Routing Protocol
+9627;Wireless ad hoc network
+9628;Vehicular ad hoc network
+9934;Mathematical optimization
+9935;Multicriteria analysis
+9936;Choquet integral
+9937;Agrégation
+9938;Computational complexity theory
+9939;Bounded function
+10136;Computer simulation
+10137;Upper and lower bounds
+10138;Control theory
+10139;Filter (signal processing)
+10140;Linear matrix
+10141;Discrete time and continuous time
+10142;Lyapunov functional
+10143;Linear matrix inequality
+10144;Filter design
+10187;HOL
+10188;Functional programming
+10189;Logic for Computable Functions
+10190;Denotational semantics
+10191;Automated theorem proving
+10192;Domain theory
+10193;Recursion
+10222;Polytope
+10223;Singular perturbation
+10224;Sampling (statistics)
+10225;Riccati equation
+10226;Robust control
+10491;Sound installation
+10492;Visualization
+10493;Clothing
+10494;Contact microphone
+10495;Hop (networking)
+10496;Multimedia
+10497;AND gate
+10507;Random variable
+10508;Output feedback
+10509;Data transmission
+10510;Performance index
+10511;Lyapunov stability
+10512;Filtering problem
+10513;Exponential stability
+10514;Finite horizon
+10515;Optimization problem
+10516;Discrete system
+10517;Multiplicative noise
+10518;Stability theory
+10519;Lyapunov function
+10520;Nonlinear control
+10521;Communication channel
+10522;Bandwidth (signal processing)
+10523;Expected value
+10577;Management information systems
+10578;Web intelligence
+10579;Knowledge management
+10580;Internet research
+10581;Web standards
+10582;Web application security
+10583;Debugging
+10636;Discrete mathematics
+10637;Combinatorics
+10638;Association scheme
+10639;Differential graded algebra
+10640;Quaternion algebra
+10641;Filtered algebra
+10642;Division algebra
+10643;Cellular algebra
+10644;Two-element Boolean algebra
+10645;Algebra representation
+10802;Software tool
+10803;Asynchronous communication
+10804;Cellular automaton
+10805;Geographic information system
+10806;Systems engineering
+10807;ArcObjects
+10808;Familiar environment
+10809;Urban planning
+10810;Predictive modelling
+11180;Web development
+11181;Web API
+11182;Web page
+11183;Web engineering
+11184;Web modeling
+11185;Web 2.0
+11186;Web service
+11305;Vibration
+11306;Acoustics
+11307;Collective work
+11308;Audio signal processing
+11309;Acoustic source localization
+11517;Cognitive map
+11518;Rationality
+11519;Decision support tools
+11520;Design rationale
+11521;Ibis
+11522;Management science
+12231;Fixed wireless
+12232;Telecommunications
+12233;Beauty
+12234;Wireless local loop
+12235;Broadband
+12236;Common value auction
+12237;Financial market
+12238;Collusion
+12239;German
+12288;Shell (computing)
+12289;Human–computer interaction
+12536;T-norm
+12537;Fuzzy classification
+12538;Fuzzy logic
+12539;Fuzzy mathematics
+12540;Fuzzy subalgebra
+12541;Metric space
+12542;Type-2 fuzzy sets and systems
+12543;Fuzzy number
+12874;IP exchange
+12875;Embedded software
+12876;High-level synthesis
+12877;Electronic system-level design and verification
+12878;Transaction-level modeling
+12879;SystemC
+12880;Electronic design automation
+12881;Hardware description language
+13287;Engineering drawing
+13295;Ticket
+13296;Database
+15000;Scheduling (computing)
+15001;Satisfiability
+15002;Decidability
+15003;Optimizing compiler
+15004;Theoretical computer science
+15005;Software
+15006;Satisfiability modulo theories
+15007;Publication
+15008;Constraint satisfaction
+15009;Propositional calculus
+15010;Formal verification
+15238;Cognitive science
+16325;Syma
+16326;Symbiotic computing
+16327;Multi-agent system
+16328;Ubiquitous computing
+16329;Cognition
+16344;Spline (mathematics)
+16345;Mars Exploration Program
+16346;Data modeling
+16347;Multivariate adaptive regression splines
+16348;Traffic flow
+16349;Regression analysis
+16350;Artificial neural network
+16351;Beijing
+16369;Data mining
+16370;Causality
+16371;End user
+16372;Ranking
+16373;Military systems
+16374;Feature model
+16375;A-weighting
+16575;Adjacency matrix
+16576;Graph
+16577;Knowledge representation and reasoning
+16578;Storytelling
+16579;Architectural design
+16580;Case-based reasoning
+16581;Subgraph isomorphism problem
+16606;Content sharing
+16607;Android (operating system)
+16608;Social network
+16609;Active networking
+16610;Overlay
+16611;User-centered design
+16625;Multiprocessor architecture
+16626;Space-based architecture
+16627;Parallel computing
+16628;Symmetric multiprocessor system
+16629;Database machine
+16630;Host processor
+16631;Hypercube
+16632;Computation
+16644;Lease
+16645;Balanced scorecard
+16646;Business administration
+16647;Application software
+16656;Pi calculus
+16657;Probabilistic CTL
+16658;Equivalence (measure theory)
+16659;Coincidence
+16660;Probabilistic logic
+16661;Probabilistic bisimulation
+16662;Semantics
+16698;Architecture
+16699;Virtual reality
+16700;Collaborative software
+16701;Server
+16707;Data stream mining
+16708;Grid computing
+16709;Data-intensive computing
+16710;Directed acyclic graph
+16711;Semantic grid
+16712;Knowledge extraction
+16713;Business process discovery
+16714;Grid
+16733;Computer vision
+16734;Feature detection (computer vision)
+16735;Image processing
+16736;Digital image
+16737;Data compression
+16738;Digital image processing
+16739;Image compression
+16740;Wavelet transform
+16741;Wavelet
+16755;Feedback loop
+16756;Electronic engineering
+16757;Positive feedback
+16758;Control system
+16759;Self-oscillation
+16760;Pilot signal
+16761;Feedthrough
+16762;Feed forward
+16763;Amplifier
+16773;Objective programming
+16774;Fire protection
+16775;Operations research
+16776;Fire risk
+16777;Genetic algorithm
+16778;Decision maker
+16792;Metadata
+16793;Information retrieval
+16794;Adaptive system
+16795;Hypermedia
+16796;Software prototyping
+16797;Context model
+16798;Presentation logic
+16807;Hegelianism
+16808;John dewey
+16809;Philosophy of science
+16810;Metaphysics
+16811;Impossibility
+16812;Philosophy
+16813;Philosophy of language
+16814;False dilemma
+16815;Epistemology
+16816;Dialectic
+16823;Symmetric group
+16824;Permutation
+16825;Base (group theory)
+16831;Economics
+16832;Economic order quantity
+16833;Holding cost
+16834;Stochastic modelling
+16835;Rate of convergence
+16836;Deterministic system
+16837;Economic production quantity
+16838;Asymptotically optimal algorithm
+16839;Jump process
+16856;Windows NT
+16857;Simulation
+16858;Requirements analysis
+16859;Graphical user interface
+16860;Pentium
+16861;Software portability
+16862;Porting
+16863;Maintainability
+16874;Functional principal component analysis
+16875;Time series
+16876;Truncation
+16877;Autoregressive model
+16878;Applied mathematics
+16879;Test statistic
+16880;Credit card
+16881;Calculus
+16882;Statistical hypothesis testing
+16883;Asymptotic distribution
+16893;Low-noise amplifier
+16894;Spice
+16895;Cascode
+16896;Stress (mechanics)
+16897;Bipolar junction transistor
+16898;Heterojunction bipolar transistor
+16899;Optoelectronics
+16900;Heterojunction
+16906;Topology
+16907;Tripping
+16908;Joint probability distribution
+16909;Electric power transmission
+16910;Power-system protection
+16911;Small set
+16912;Islanding
+16913;Statistical analysis
+16927;Interactive evolutionary computation
+16928;Human-based evolutionary computation
+16929;Evolutionary algorithm
+16930;Evolutionary computation
+16931;Evolution strategy
+16932;Evolutionary programming
+16933;Evolutionary music
+16934;Java Evolutionary Computation Toolkit
+16943;Demand estimation
+16944;Sampling theory
+16945;Mobile phone
+16946;Fuzzy data
+16947;Telecommunications service
+16959;Interpersonal communication
+16960;Conversation
+16961;Computer-supported cooperative work
+16962;Wearable computer
+16963;Augmented reality
+16972;Sound pressure
+16973;Oscillation
+16974;Surface wave
+16975;Optics
+16976;Integral equation
+16977;Supersonic speed
+16978;Reflection (physics)
+16979;Acoustic wave
+16980;Mach number
+16985;Natural interaction
+16986;Usability
+16992;Gait
+16993;Longitudinal static stability
+16994;Catastrophic failure
+16995;Robustness (computer science)
+16996;Gait analysis
+16997;Fault tolerance
+16998;Redundancy (engineering)
+16999;Robot
+17018;Steganography
+17019;High capacity
+17020;Computer security
+17028;Graph theory
+17029;Information loss
+17030;Adversary
+17031;Anonymity
+17032;Information privacy
+17041;Integer
+17042;Weight function
+17043;Edge cover
+17044;Vertex (graph theory)
+17045;Approximation algorithm
+17046;Dynamic programming
+17047;Exponential function
+17048;Vertex (geometry)
+17049;Neighbourhood (graph theory)
+17050;Minimum weight
+17051;Vertex cover
+17095;Server-side
+17096;Division (mathematics)
+17097;Load balancing (computing)
+17098;Popularity
+17099;Microcell
+17100;Software architecture
+17101;Virtual world
+17112;Convergence (routing)
+17113;Default-free zone
+17114;Soft state
+17115;Routing domain
+17116;Border Gateway Protocol
+17117;Routing table
+17118;Communications protocol
+17119;Routing protocol
+17143;CDNA Arrays
+17144;Normalization (statistics)
+17145;Biology
+17146;Population Heterogeneity
+17147;High density
+17148;Comparative genomic hybridization
+17149;Mega-
+17150;Genetics
+17151;DNA microarray
+17152;Gene expression microarray
+17161;Preamplifier
+17162;Operational transconductance amplifier
+17163;Noise (electronics)
+17164;Direct-coupled amplifier
+17165;Instrumentation amplifier
+17166;Common-mode rejection ratio
+17167;Electrical engineering
+17168;Operational amplifier
+17185;Planarity testing
+17186;Vertex-transitive graph
+17187;Cayley table
+17188;Cayley's theorem
+17189;Cayley graph
+17190;Cayley transform
+17191;Word metric
+17192;Counterexample
+17203;Convexity
+17204;Geodetic datum
+17205;Subgroup
+17206;Hull number
+17207;Induced subgraph
+17208;Hull
+17230;Base station
+17231;Wireless network
+17232;Mobile station
+17233;Single antenna interference cancellation
+17234;Price of anarchy
+17235;Nash equilibrium
+17236;Non-cooperative game
+17262;Development environment
+17263;Telematics
+17270;Background information
+17271;Salience (neuroscience)
+17272;Nonlinear diffusion
+17273;Filtering theory
+17274;Salient
+17275;Cognitive neuroscience of visual object recognition
+17307;Homogeneity (statistics)
+17308;Median filter
+17309;Fuzzy similarity
+17310;Image noise
+17311;Active noise control
+17328;Reporter gene
+17329;Untranslated region
+17330;Annotation
+17331;Relational database
+17332;Ribosomal RNA
+17333;Internal ribosome entry site
+17334;Messenger RNA
+17335;Plasmid
+17350;Virtual image
+17351;Educational technology
+17352;Computer graphics (images)
+17361;Software Engineering Process Group
+17362;Software system
+17363;Software sizing
+17364;Software verification
+17365;Software requirements
+17366;Social software engineering
+17377;Magnetic field
+17378;Conical surface
+17379;Mathematical analysis
+17380;Electromagnetic shielding
+17381;Cylinder
+17382;Planar
+17383;Electromagnetic coil
+17384;Inverse problem
+17385;Toroid
+17386;Geometry
+17391;Man-in-the-middle attack
+17392;Cryptographic protocol
+17393;Terminology
+17394;Cryptography
+17395;Random string
+17396;Commitment scheme
+17397;Coin flipping
+17438;Social relation
+17439;Internet privacy
+17440;Social media
+17441;Online community
+17442;Electronic media
+17443;Bookmarking
+17471;Self-organization
+17472;Centrality
+17473;Hierarchical network model
+17474;Bioinformatics
+17475;Network analysis
+17476;Hierarchy
+17477;Spite
+17478;Hierarchical organization
+17489;Beacon
+17490;Local positioning system
+17491;Odometry
+17492;Optimization algorithm
+17493;Auto calibration
+17494;Linearization
+17495;Trilateration
+17513;Open problem
+17514;General method
+17515;Ring signature
+17516;Group signature
+17517;Hash function
+17518;Discrete logarithm
+17537;Matrix (mathematics)
+17538;Group ring
+17539;Weighing matrix
+17540;Square matrix
+17541;Circulant matrix
+17542;Computer search
+17570;Weighting
+17571;Speech coding
+17572;Noise measurement
+17573;Audio mining
+17574;Speech recognition
+17575;Speaker recognition
+17576;Audio-visual speech recognition
+17577;Acoustic model
+17591;Content discovery
+17609;Cross country analysis
+17610;Information technology
+17615;Scientific literature
+17616;Political science
+17617;Transformational leadership
+17618;Publishing
+17619;Library science
+17620;Basic premise
+17621;Article-level metrics
+17628;Fast marching algorithm
+17629;Saddle point
+17630;Fast marching method
+17631;Level set
+17632;Initialization
+17633;Backpropagation
+17634;Perception
+17635;Energy minimization
+17656;Deniable encryption
+17657;Encryption
+17658;External storage
+17659;Throughput
+17660;On-the-fly encryption
+17687;Next-generation network
+17688;Wireless
+17689;Topology control
+17690;Backbone network
+17691;Control reconfiguration
+17712;Kinematics
+17713;Measurement uncertainty
+17714;Control engineering
+17715;Transfer function
+17716;Deformation (mechanics)
+17717;Temperature measurement
+17718;Geodesy
+17719;Wireless sensor network
+17720;Fundamental change
+17726;The Symbolic
+17727;Pictogram
+17728;Computer performance
+17729;Operator (computer programming)
+17730;Variables
+17731;Analogy
+17732;Single-subject design
+17733;Empirical research
+17749;Dynamic network analysis
+17750;Biological data
+17751;Interdependent networks
+17752;Biological network
+17753;Interaction network
+17754;Network theory
+17755;Network model
+17776;Perplexity
+17777;Newspaper
+17778;Temporal modeling
+17779;Information Dissemination
+17780;Topic model
+17781;STREAMS
+17815;Static program analysis
+17816;Software factory
+17817;Software framework
+17850;Degrees of freedom (statistics)
+17851;Coupling
+17852;Torque
+17853;Jacobian matrix and determinant
+17854;Pendulum
+17855;Pulley
+17856;Actuator
+17885;Object oriented methods
+17886;Microarchitecture
+17926;Web design
+17927;Web search engine
+17928;Web search query
+17929;Semantic search
+17930;Web navigation
+17931;Web crawler
+17962;Drawback
+17963;Goal decomposition
+17964;Hierarchical task network
+17965;Gödel
+17966;Domain knowledge
+17967;System a
+17968;Formalism (philosophy)
+17989;Categorization
+17990;Evaluation result
+17991;Feature selection
+17992;Primary mathematics
+17993;Support vector machine
+17994;Computerized adaptive testing
+17995;Item bank
+17996;Primary education
+18013;Image matching
+18014;Image coding
+18027;Saliency map
+18028;Gaze
+18029;Anticipation
+18030;Exploit
+18031;Eye movement
+18054;Coordinate system
+18055;Nonlinear system
+18056;Internal model
+18057;Trajectory
+18073;Data structure
+18074;Data processing
+18075;Data set
+18076;Data pre-processing
+18077;Out-of-core algorithm
+18078;Preprocessor
+18079;Point cloud
+18129;Superposition principle
+18130;Functional magnetic resonance imaging
+18131;Topographic map
+18132;Neuroimaging
+18133;Temporal resolution
+18134;Electroencephalography
+18147;Arid
+18148;Drainage basin
+18149;Semi-arid climate
+18150;Climatology
+18151;Aridity index
+18152;Evapotranspiration
+18153;Blaney–Criddle equation
+18154;Precipitation
+18166;Efficient energy use
+18167;Approximation theory
+18168;Brooks–Iyengar algorithm
+18169;Deployment environment
+18186;Product engineering
+18187;Domain analysis
+18188;Domain engineering
+18189;Know-how
+18190;Software product line
+18191;Product design
+18197;Broadcasting
+18198;Bandwidth limitation
+18199;Software deployment
+18200;Periodic broadcasting
+18201;Mass storage
+18217;Object detection
+18218;Military computing
+18219;Clutter
+18220;Naval architecture
+18221;Open sea
+18222;Sea trial
+18230;Control algorithm
+18231;Finite set
+18232;Fading
+18233;Network packet
+18234;Model free
+18235;Cognitive radio
+18249;Resource management
+18250;Replicator equation
+18251;Distributed generation
+18252;Dynamic priority scheduling
+18253;Microgrid
+18276;Open shop
+18277;Optimal scheduling
+18278;Job shop scheduling
+18279;Industrial engineering
+18280;Job shop
+18281;Flow shop scheduling
+18282;Machine orders
+18305;SQL
+18306;Comparator
+18307;Pixel
+18308;Detailed data
+18309;Relational database management system
+18310;ROLAP
+18311;Cube
+18326;Phase-locked loop
+18327;Code rate
+18328;Microprocessor
+18329;Frequency synthesizer
+18330;Chip
+18331;Chipset
+18332;Automatic gain control
+18333;Computer hardware
+18334;Detector
+18341;Digital watermarking
+18342;Lifting scheme
+18343;Second-generation wavelet transform
+18344;Discrete wavelet transform
+18345;Stationary wavelet transform
+18346;Wavelet packet decomposition
+18367;Ontology
+18368;RefSeq
+18369;Molecular diagnostics
+18370;Research community
+18371;Semantic network
+18372;Genomics
+18384;Artifact-centric business process model
+18385;Business software
+18386;Business requirements
+18387;Component business model
+18388;Business process modeling
+18389;Business architecture
+18390;Business Process Model and Notation
+18391;Business activity monitoring
+18404;Attractor
+18405;Hash-based message authentication code
+18406;Message authentication code
+18407;Cryptanalysis
+18408;Data Authentication Algorithm
+18409;Chosen message attack
+18429;Functional logic programming
+18430;System programming
+18431;Autonomic computing
+18432;Programming paradigm
+18433;Inductive programming
+18434;Reactive programming
+18435;Programming domain
+18474;Noise
+18475;Noise reduction
+18476;Speech processing
+18477;Likelihood-ratio test
+18478;Voice activity detection
+18479;Covariance matrix
+18480;Cholesky decomposition
+18509;Abstraction layer
+18510;Cloud storage
+18511;Cloud computing
+18544;Forward error correction
+18545;Media access control
+18546;Convolutional code
+18547;Turbo code
+18548;Watermark
+18549;Copy protection
+18706;WiBro
+18707;Wireless broadband
+18708;IMT Advanced
+18709;Digital subscriber line
+18710;Mobile broadband modem
+18711;Internet access
+18712;Mobile broadband
+19037;N dimensional
+19038;Connected component
+19039;Interconnection
+19140;Special needs
+19141;Domestic market
+19142;Product architecture
+19143;Commerce
+19144;Product innovation
+19145;Product management
+19146;Industrial organization
+19147;New product development
+19195;Legal aspects of computing
+19196;Crime scene
+19197;Computer communication networks
+19198;Computer configuration
+19199;OS X
+19200;Instant messenger
+19224;Spatial analysis
+19225;Study analysis
+19226;Study methodology
+19227;Research question
+19228;Web integration
+19234;Abstract and concrete
+19235;Sociology
+19236;Information science
+19237;Controlled vocabulary
+19238;Significant difference
+19239;Biological sciences
+19240;Mathematics education
+19241;Behavioural sciences
+19242;Language research
+19243;Vocabulary
+19254;Experiential learning
+19255;Active learning
+19256;Vocabulary learning
+19257;Computer based
+19268;Oil spill
+19269;Polarimetry
+19270;Stokes parameters
+19271;Mineralogy
+19272;Synthetic aperture radar
+19273;Remote sensing
+19274;Horizon
+19275;Marine pollution
+19276;Bragg's law
+19277;Scattering
+19278;Geology
+19320;Hyperspectral image classification
+19321;Small number
+19322;Laplacian support vector machine
+19323;Hyperspectral imaging
+19324;Contextual image classification
+19325;Cluster analysis
+19326;Manifold
+19372;Quality software
+19373;Cleanroom
+19374;Management
+19412;Broadcast encryption
+19413;Revocation
+19414;Payment
+19415;Digital content
+19416;Broadcast channels
+19892;Fuzzy set operations
+19893;Special class
+19894;Defuzzification
+19895;Modular design
+19896;Membership function
+19897;Normal subgroup
+20777;Computer-aided software engineering
+20778;Software visualization
+20779;Software quality
+22328;Canopy clustering algorithm
+22329;Fuzzy clustering
+22330;CURE data clustering algorithm
+22331;Data stream clustering
+22332;Correlation clustering
+22333;Curse of dimensionality
+22334;Nearest-neighbor chain algorithm
+22964;Tree testing
+22965;Usability lab
+23062;Digital Watermarking Alliance
+23063;Credibility
+23064;Information hiding
+23065;Digital data
+23542;Humanities
+23543;Encyclopedia
+23544;E-commerce
+23951;Law
+24041;Trusted Network Connect
+24042;Trusted third party
+24043;Digital evidence
+24044;Direct Anonymous Attestation
+24066;Public relations
+24067;Danish
+24068;Government
+24085;Task management
+24086;User interface
+24087;Tangible user interface
+24088;Project management
+24317;Delta
+25128;History
+25175;Singularity theory
+25176;Computer graphics
+25514;Mobile technology
+25515;Mobile identification number
+25516;Mobile search
+25517;Mobile phone tracking
+25518;Mobile database
+25519;GSM services
+25520;Mobile Web
+25630;Domain name
+25631;Nothing
+25632;International treaty
+26574;Hard copy
+26575;Intellectual property
+27213;Specific-information
+27214;Internet portal
+27561;New england
+27819;Information technology architecture
+27820;Organizational impact
+27821;Technology education
+27822;Information Processes and Technology
+27823;Information technology management
+27928;Insurance industry
+27929;Actuarial science
+28349;Secrecy
+28350;Dilemma
+28353;Directive on Privacy and Electronic Communications
+28354;Directive
+28355;Member states
+28356;Consumer protection
+28429;Learning behavior
+29026;Iterative reconstruction
+29027;Cellular biophysics
+29028;Image texture
+29029;Segmentation
+29030;Transmission electron microscopy
+29031;High-resolution transmission electron microscopy
+29032;Image segmentation
+29033;Computational analysis
+29050;Convection–diffusion equation
+29051;Discretization
+29052;Square-integrable function
+29053;Scalar (physics)
+29054;A priori and a posteriori
+29055;Flux
+29056;Backward Euler method
+29057;Mixed finite element method
+29381;Public administration
+29382;Informatics
+30128;Autonomous Navigation System
+30129;Turning radius
+30130;Mobile robot navigation
+30131;Zigzag
+30132;Mobile robot
+31280;Engineering management
+32388;Algebraic structure
+32389;Sequential machine
+32390;Automaton
+32391;Invertible matrix
+32392;Theory of computation
+32393;Nilpotent
+33249;Self-healing
+33250;Grid system
+33777;Family of sets
+33778;Ultrafilter
+33779;Mathematical logic
+34320;MIMO
+34321;Adaptive filter
+34322;Decoding methods
+34323;Spatial multiplexing
+34595;Design education
+34596;Participatory design
+34597;Ethnomethodology
+34598;Realisation
+35739;Psychology
+35740;Cognitive psychology
+35741;Consciousness
+36417;Separable space
+36418;Smoothing
+36419;Lagrangian decomposition
+36420;Smoothness
+36421;Convex optimization
+36422;Convex analysis
+36649;Consumer law
+36685;User assistance
+36686;Metaheuristic
+38060;Legal protection
+38061;Information Age
+38067;Media studies
+38068;Art history
+38069;Negotiation
+38476;Network address translation
+38477;IP address management
+38478;IP forwarding
+38479;Overlay network
+38480;IP tunnel
+38621;Test suite
+38622;Software fault tolerance
+38623;Unix
+38624;Batch processing
+38625;Software maintenance
+38696;Elliptic Curve Digital Signature Algorithm
+38697;Scalar multiplication
+38698;Elliptic curve point multiplication
+38699;Elliptic curve cryptography
+38700;Jacobian curve
+38701;Elliptic curve
+38702;Counting points on elliptic curves
+38703;Tripling-oriented Doche–Icart–Kohel curve
+39494;Gesture
+39495;Controlled experiment
+39496;Scrolling
+39531;Automatic control
+39532;Parametric statistics
+39533;Probability of error
+39836;Tower
+39837;Gray code

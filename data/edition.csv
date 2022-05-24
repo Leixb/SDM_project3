@@ -1,0 +1,231 @@
+ID;Year;City
+111;2007;Madrid
+126;2009;Santiago
+145;2004;Beijing
+175;2006;Hyderabad
+182;2008;Guangzhou
+224;1980;Dongguan
+266;2003;Dar es Salaam
+278;2002;Paris
+831;1997;Cairo
+846;1998;Miami
+850;1998;Nanjing
+855;1999;Lahore
+959;2006;Bogotá
+1135;2007;Saint Petersburg
+1208;2010;Mumbai
+1245;2009;Shanghai
+1255;2011;Seoul
+1283;2013;Nagoya
+1380;2013;Shanghai
+1447;1980;Harbin
+1505;2012;Istanbul
+1527;2000;Karachi
+1559;1990;Chengdu
+1584;1930;New York
+1636;2000;Houston
+1669;1969;London
+1788;2013;New York
+1805;1995;Chicago
+1808;1996;Los Angeles
+1899;2004;Beijing
+1910;2004;Bangkok
+2024;2010;Dhaka
+2049;2012;Xi'an
+2262;1989;Barcelona
+2267;1989;São Paulo
+2446;2005;Mumbai
+2464;2006;Rio de Janeiro
+2544;1950;Mexico City
+2960;2004;Santiago
+2984;1996;Qingdao
+2995;1990;Mexico City
+3019;2002;Suzhou
+3055;1994;Kolkata
+3252;1981;Moscow
+3650;2007;Atlanta
+3703;1972;Kinshasa
+4008;2008;Toronto
+4011;2008;Shenzhen
+5616;1975;Istanbul
+6057;1958;Jakarta
+6062;1927;Pune
+6180;2002;Seoul
+6909;2012;Madrid
+7558;1999;Riyadh
+7916;2006;Riyadh
+7939;2007;Foshan
+8012;2013;Dalian
+9132;2005;Kuala Lumpur
+9428;1938;Bogotá
+9462;2006;Osaka
+9544;2005;Buenos Aires
+9723;1952;Lahore
+9767;2006;Jinan
+10078;2008;Luanda
+10471;1965;Paris
+10531;2014;Baghdad
+10540;2003;Washington
+11350;2009;Atlanta
+11773;1976;Suzhou
+11777;1975;Tianjin
+12168;1994;Fukuoka
+12171;2012;Dongguan
+12360;1976;Wuhan
+12377;2002;Atlanta
+12675;2006;Wuhan
+12705;2010;Yangon
+12741;2005;Beijing
+12811;2005;Tokyo
+12863;2008;Beijing
+12980;2001;Karachi
+13223;2009;Ho Chi Minh
+13249;2010;Tokyo
+13330;1984;Houston
+13604;1982;Shanghai
+14138;2014;Alexandria
+14416;1993;Dalian
+14519;1999;Washington
+14795;1979;Guangzhou
+15023;1974;Seoul
+15029;2012;Chennai
+15410;2009;Tehran
+15749;2013;Dongguan
+15765;2014;Chennai
+15807;1997;Chongqing
+16232;1994;Tokyo
+16740;2000;Houston
+16980;2009;Khartoum
+17049;2014;Mumbai
+17066;2005;Dongguan
+17100;1972;Foshan
+17104;2005;Kinshasa
+17108;1951;Ahmedabad
+17117;1979;Guadalajara
+17340;1947;Barcelona
+17345;2007;Nanjing
+17472;2007;New York
+17507;1907;Dallas
+17717;1973;Barcelona
+17749;1901;Los Angeles
+17886;2003;Surat
+18193;2013;Kolkata
+18284;2008;Shanghai
+18286;2009;Karachi
+18292;2003;Dalian
+18562;2002;Harbin
+18614;2005;Philadelphia
+18758;1979;Miami
+19392;1941;Mumbai
+19508;2014;Shanghai
+20100;1983;Seoul
+20143;1926;London
+20145;1973;Shenyang
+20611;2011;Karachi
+20749;2006;Wuhan
+21756;1990;Lahore
+21890;1992;Surat
+21988;1997;Dongguan
+22110;2004;Hyderabad
+22154;2006;Houston
+22211;1905;Santiago
+22429;1979;Belo Horizonte
+22518;1989;Baghdad
+22772;1994;Chongqing
+22775;2009;Mexico City
+22790;1990;Istanbul
+22963;2012;Saint Petersburg
+23227;1963;Bangkok
+23240;1970;Luanda
+23285;1987;Madrid
+23313;2015;Ahmedabad
+23608;2003;Dar es Salaam
+24034;1970;Shenzhen
+24440;1998;Istanbul
+25135;2009;Philadelphia
+25224;2007;Tehran
+25484;2011;Seoul
+26853;2010;Delhi
+27955;1999;Nanjing
+28127;2010;Kuala Lumpur
+29732;2007;Guangzhou
+29940;2004;Bangalore
+31594;1990;Buenos Aires
+31667;1973;New York
+32109;2004;Ho Chi Minh
+32189;1992;New York
+32953;2009;Ahmedabad
+33683;2002;Shanghai
+33978;2011;Luanda
+35931;1992;Madrid
+36427;2010;Santiago
+36484;2011;Riyadh
+36692;2006;Delhi
+36959;2010;Pune
+37355;1998;Shenzhen
+37572;2006;Beijing
+37755;2013;Jakarta
+38477;2005;Mexico City
+38876;2003;Paris
+39909;2001;Singapore
+40103;1972;Foshan
+40556;2011;Alexandria
+41053;2012;Jinan
+41381;2012;Harbin
+41455;2002;Kuala Lumpur
+41779;2003;Harbin
+41792;2003;Chicago
+41824;2004;São Paulo
+41879;2007;Riyadh
+43530;1992;Chicago
+43726;2012;Jakarta
+44277;2007;Alexandria
+44789;2007;Kinshasa
+45452;2012;Hangzhou
+47542;2008;Beijing
+47670;2010;Dongguan
+47900;2013;Chengdu
+48232;2008;Dongguan
+48451;1999;Los Angeles
+48739;2013;Chongqing
+48813;2008;Dhaka
+49717;2006;Istanbul
+49721;2015;London
+50056;1992;Guangzhou
+50556;1974;Chongqing
+50618;1997;Philadelphia
+50937;2010;Kinshasa
+51079;2008;Bangalore
+51619;2008;Karachi
+52043;1975;Lahore
+52067;2004;Guangzhou
+52174;2008;Mumbai
+53635;1986;Khartoum
+53733;2005;Jakarta
+55051;2015;Jinan
+55356;2002;Lima
+55377;2017;Toronto
+55388;1994;Kolkata
+55848;1992;Xi'an
+55970;2003;Beijing
+56310;2001;Ahmedabad
+56709;1998;Beijing
+57206;1987;Kinshasa
+57706;1991;Tianjin
+57831;2011;Barcelona
+57869;2006;Shenzhen
+58219;1999;Surat
+58509;2006;Dalian
+58856;2005;Dhaka
+58960;2009;Ahmedabad
+59605;1992;Mexico City
+59844;2009;Luanda
+60474;1939;Guangzhou
+60759;2002;Rio de Janeiro
+61020;2013;Riyadh
+61062;2013;Barcelona
+61189;1996;Chongqing
+62061;1999;Baghdad
+62133;2009;Riyadh
+62350;2007;Karachi
+62405;2004;Ho Chi Minh

@@ -18,8 +18,11 @@ $RUNNER \
     --node=Keyword=./data/keywords.csv \
     --node=Review=./data/reviews.csv \
     --node=University=./data/university.csv \
-    --node=Venue:Volume=./data/volume.csv \
+    --node=PublicationLocation:JournalVolume=./data/volume.csv \
+    --node=PublicationLocation:ConferenceProceeding=./data/edition.csv \
+    --node=Area=./data/area.csv \
+    --edge=relatedTo=Paper=Area=./data/rel_related.csv \
     --edge=write=Author=Paper=./data/rel_writes.csv \
     --edge=makeReview=Author=Review=./data/rel_gives_review.csv \
     --edge=aboutPaper=Review=Paper=./data/rel_review_about_paper.csv \
-    --edge=published=Paper=Venue=./data/rel_published.csv
+    --edge=includedIn=Paper=PublicationLocation=./data/rel_published.csv
