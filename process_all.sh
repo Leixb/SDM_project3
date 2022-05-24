@@ -9,7 +9,6 @@ $RUNNER \
     --node=Paper:FullPaper=./data/papers_c.csv \
     --node=Paper:ShortPaper=./data/papers_d.csv \
     --node=Author=./data/authors.csv \
-    --node=Company=./data/company.csv \
     --node=Conference:Workshop=./data/workshop.csv \
     --node=Conference:RegularConference=./data/conferences_a.csv \
     --node=Conference:ExpertGroup=./data/conferences_b.csv \
@@ -17,7 +16,6 @@ $RUNNER \
     --node=Journal=./data/journal.csv \
     --node=Keyword=./data/keywords.csv \
     --node=Review=./data/reviews.csv \
-    --node=University=./data/university.csv \
     --node=PublicationLocation:JournalVolume=./data/volume.csv \
     --node=PublicationLocation:ConferenceProceeding=./data/edition.csv \
     --node=Area=./data/area.csv \
