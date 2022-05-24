@@ -34,7 +34,7 @@ class Main {
     private static class NodeFile implements ModelMember {
         String name, filename, nodeParent;
 
-        public NodeFile(String nodeParent, String nodeName, String filename) {
+        public NodeFile(final String nodeParent, final String nodeName, final String filename) {
             this.name = nodeName;
             this.filename = filename;
             this.nodeParent = nodeParent;
@@ -45,36 +45,36 @@ class Main {
 
             System.err.println("Processing file: " + filename);
 
-            Iterator<String[]> csvRows = getCSVReader(filename).iterator();
+            final Iterator<String[]> csvRows = getCSVReader(filename).iterator();
 
-            String objectURI = baseURI + ((nodeParent == null || nodeParent.isBlank())? name : nodeParent);
+            final String objectURI = baseURI + ((nodeParent == null || nodeParent.isBlank())? name : nodeParent);
 
-            Resource resourceType = model.createResource(baseURI + name);
+            final Resource resourceType = model.createResource(baseURI + name);
 
-            List<Property> properties = Stream.of(csvRows.next()) // Take header as first line
+            final List<Property> properties = Stream.of(csvRows.next()) // Take header as first line
                 .skip(1) //Skip the first column which is the ID
                 .map(s -> model.createProperty(baseURI + s)) // Create property for each column
                 .collect(java.util.stream.Collectors.toList());
 
             csvRows.forEachRemaining(row -> {
-                Iterator<String> it = Arrays.asList(row).iterator();
+                final Iterator<String> it = Arrays.asList(row).iterator();
                 if (!it.hasNext()) {
                     return;
                 }
 
-                String id = it.next().trim();
+                final String id = it.next().trim();
                 if (id.isEmpty()) {
                     return;
                 }
 
-                Resource object = model.createResource(objectURI + "-" + id, resourceType);
+                final Resource object = model.createResource(objectURI + "-" + id, resourceType);
 
                 properties.forEach(p -> {
                     if (!it.hasNext()) {
                         return;
                     }
 
-                    String value = it.next();
+                    final String value = it.next();
                     if (value != null) {
                         object.addProperty(p, value);
                     }
@@ -88,7 +88,7 @@ class Main {
     private static class EdgeFile implements ModelMember {
         String name, source, destination, filename;
 
-        public EdgeFile(String name, String source, String destination, String filename) {
+        public EdgeFile(final String name, final String source, final String destination, final String filename) {
             this.name = name;
             this.source = source;
             this.destination = destination;
@@ -96,21 +96,21 @@ class Main {
         }
 
         public void addToModel() {
-            Iterator<String[]> csvRows = getCSVReader(filename).iterator();
-            String objectURI = baseURI + name;
+            final Iterator<String[]> csvRows = getCSVReader(filename).iterator();
+            final String objectURI = baseURI + name;
 
-            Property property = model.createProperty(objectURI);
+            final Property property = model.createProperty(objectURI);
 
             csvRows.forEachRemaining(row -> {
                 if (row.length != 2) {
                     return;
                 }
 
-                String sourceId = row[0];
-                String destId = row[1];
+                final String sourceId = row[0];
+                final String destId = row[1];
 
-                Resource sourceObject = model.createResource(baseURI + source + "-" + sourceId);
-                Resource destObject = model.createResource(baseURI + destination + "-" + destId);
+                final Resource sourceObject = model.createResource(baseURI + source + "-" + sourceId);
+                final Resource destObject = model.createResource(baseURI + destination + "-" + destId);
 
                 sourceObject.addProperty(property, destObject);
 
@@ -118,12 +118,12 @@ class Main {
         }
     }
 
-    private static CSVReader getCSVReader(String filename) {
+    private static CSVReader getCSVReader(final String filename) {
         CSVReader reader = null;
         try {
             reader = new CSVReaderBuilder(new BufferedReader(new FileReader(filename)))
                 .withCSVParser(new CSVParserBuilder().withSeparator(';').build()).build();
-        } catch (FileNotFoundException e) {
+        } catch (final FileNotFoundException e) {
             System.err.println("ERROR: File not found: " + filename);
             e.printStackTrace();
             System.exit(1);
@@ -132,22 +132,22 @@ class Main {
         return reader;
     }
 
-    private static void saveRDF(String filename) {
+    private static void saveRDF(final String filename) {
         try {
-            BufferedWriter out = new BufferedWriter(new FileWriter(filename));
+            final BufferedWriter out = new BufferedWriter(new FileWriter(filename));
             model.write(out, "RDF/XML");
-        } catch (IOException e) {
+        } catch (final IOException e) {
             System.err.println("ERROR: Could not write to file " + filename);
             e.printStackTrace();
         }
     }
 
-    private static List<ModelMember> parseArgs(String[] args) {
-        List<ModelMember> modelMembers = new ArrayList<ModelMember>();
+    private static List<ModelMember> parseArgs(final String[] args) {
+        final List<ModelMember> modelMembers = new ArrayList<ModelMember>();
 
-        for (String arg : args) {
+        for (final String arg : args) {
             if (arg.startsWith("--node=")) {
-                String[] parts = arg.split("=");
+                final String[] parts = arg.split("=");
                 if (parts.length != 3) {
                     System.err.println("ERROR: Node arguments require 2 parameters: --node=nodeName=filename.csv");
                     System.exit(1);
@@ -158,7 +158,7 @@ class Main {
                     nodeParent = nodeName.split(":")[0];
                     nodeName = nodeName.split(":")[1];
                 }
-                String filename = parts[2];
+                final String filename = parts[2];
                 if (!Files.exists(java.nio.file.Paths.get(filename))) {
                     System.err.println("ERROR: Node file " + filename + " does not exist");
                     System.exit(1);
@@ -166,16 +166,16 @@ class Main {
 
                 modelMembers.add(new NodeFile(nodeParent, nodeName, filename));
             } else if (arg.startsWith("--edge=")) {
-                String[] parts = arg.split("=");
+                final String[] parts = arg.split("=");
                 if (parts.length != 5) {
                     System.err.println("ERROR: Edge arguments require 4 parameters: --edge=relationShipName=sourceName=destName=filename.csv");
                     System.exit(1);
                 }
 
-                String edgeName = parts[1];
-                String sourceName = parts[2];
-                String destName = parts[3];
-                String filename = parts[4];
+                final String edgeName = parts[1];
+                final String sourceName = parts[2];
+                final String destName = parts[3];
+                final String filename = parts[4];
                 if (!Files.exists(java.nio.file.Paths.get(filename))) {
                     System.err.println("ERROR: Edge file " + filename + " does not exist");
                     System.exit(1);
@@ -183,7 +183,7 @@ class Main {
 
                 modelMembers.add(new EdgeFile(edgeName, sourceName, destName, filename));
             } else if (arg.startsWith("--output=")) {
-                String[] parts = arg.split("=");
+                final String[] parts = arg.split("=");
                 if (parts.length > 1) {
                     outputFilename = parts[1];
                 }
@@ -209,9 +209,9 @@ class Main {
     // Program entrypoint
     //
     // Usage: java -jar papers.jar [--node=nodename=filename.csv]... [--edge=relationShipName=sourceName=destName=filename.csv]... [--output=output_file]
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
-        List<ModelMember> modelMembers = parseArgs(args);
+        final List<ModelMember> modelMembers = parseArgs(args);
 
         // Create empty model
         model = ModelFactory.createDefaultModel();
@@ -221,7 +221,7 @@ class Main {
         modelMembers.forEach(ModelMember::addToModel);
 
         // Merge schema into model
-        Model schema = loadSchema();
+        final Model schema = loadSchema();
         model = ModelFactory.createUnion(schema, model);
 
         // Alternatively, we could use createRDFSModel() to merge our model with
