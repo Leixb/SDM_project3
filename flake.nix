@@ -33,6 +33,14 @@
 
     packages = {
       inherit jar;
+
+      rdfs = pkgs.runCommand "sdmlab3.rdf" {} ''
+        export RUNNER="${self.packages.${system}.jar}/bin/sdm-lab"
+        export OUTPUT="$out"
+        export DATA="${./data}"
+
+        ${builtins.readFile ./process_all.sh}
+      '';
     };
 
     defaultPackage = packages.jar;

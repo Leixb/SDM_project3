@@ -2,25 +2,28 @@
 
 NIX="nix run .#jar --"
 RUNNER="${RUNNER:-$NIX}"
+OUTPUT="${OUTPUT:-papers.rdf}"
+DATA="${DATA:-./data}"
 
 $RUNNER \
-    --node=Paper:Poster=./data/papers_a.csv \
-    --node=Paper:DemoPaper=./data/papers_b.csv \
-    --node=Paper:FullPaper=./data/papers_c.csv \
-    --node=Paper:ShortPaper=./data/papers_d.csv \
-    --node=Author=./data/authors.csv \
-    --node=Conference:Workshop=./data/workshop.csv \
-    --node=Conference:RegularConference=./data/conferences_a.csv \
-    --node=Conference:ExpertGroup=./data/conferences_b.csv \
-    --node=Conference:Symposium=./data/conferences_c.csv \
-    --node=Journal=./data/journal.csv \
-    --node=Keyword=./data/keywords.csv \
-    --node=Review=./data/reviews.csv \
-    --node=PublicationMedium:JournalVolume=./data/volume.csv \
-    --node=PublicationMedium:ConferenceProceeding=./data/edition.csv \
-    --node=Area=./data/area.csv \
-    --edge=relatedTo=Paper=Area=./data/rel_related.csv \
-    --edge=write=Author=Paper=./data/rel_writes.csv \
-    --edge=makeReview=Author=Review=./data/rel_gives_review.csv \
-    --edge=aboutPaper=Review=Paper=./data/rel_review_about_paper.csv \
-    --edge=includedIn=Paper=PublicationMedium=./data/rel_published.csv
+    --output="$OUTPUT" \
+    --node=Paper:Poster="${DATA}/papers_a.csv" \
+    --node=Paper:DemoPaper="${DATA}/papers_b.csv" \
+    --node=Paper:FullPaper="${DATA}/papers_c.csv" \
+    --node=Paper:ShortPaper="${DATA}/papers_d.csv" \
+    --node=Author="${DATA}/authors.csv" \
+    --node=Conference:Workshop="${DATA}/workshop.csv" \
+    --node=Conference:RegularConference="${DATA}/conferences_a.csv" \
+    --node=Conference:ExpertGroup="${DATA}/conferences_b.csv" \
+    --node=Conference:Symposium="${DATA}/conferences_c.csv" \
+    --node=Journal="${DATA}/journal.csv" \
+    --node=Keyword="${DATA}/keywords.csv" \
+    --node=Review="${DATA}/reviews.csv" \
+    --node=PublicationMedium:JournalVolume="${DATA}/volume.csv" \
+    --node=PublicationMedium:ConferenceProceeding="${DATA}/edition.csv" \
+    --node=Area="${DATA}/area.csv" \
+    --edge=relatedTo=Paper=Area="${DATA}/rel_related.csv" \
+    --edge=write=Author=Paper="${DATA}/rel_writes.csv" \
+    --edge=makeReview=Author=Review="${DATA}/rel_gives_review.csv" \
+    --edge=aboutPaper=Review=Paper="${DATA}/rel_review_about_paper.csv" \
+    --edge=includedIn=Paper=PublicationMedium="${DATA}/rel_published.csv"
