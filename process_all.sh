@@ -16,11 +16,11 @@ $RUNNER \
     --node=Journal=./data/journal.csv \
     --node=Keyword=./data/keywords.csv \
     --node=Review=./data/reviews.csv \
-    --node=PublicationLocation:JournalVolume=./data/volume.csv \
-    --node=PublicationLocation:ConferenceProceeding=./data/edition.csv \
+    --node=PublicationMedium:JournalVolume=./data/volume.csv \
+    --node=PublicationMedium:ConferenceProceeding=./data/edition.csv \
     --node=Area=./data/area.csv \
     --edge=relatedTo=Paper=Area=./data/rel_related.csv \
     --edge=write=Author=Paper=./data/rel_writes.csv \
     --edge=makeReview=Author=Review=./data/rel_gives_review.csv \
     --edge=aboutPaper=Review=Paper=./data/rel_review_about_paper.csv \
-    --edge=includedIn=Paper=PublicationLocation=./data/rel_published.csv
+    --edge=includedIn=Paper=PublicationMedium=./data/rel_published.csv
