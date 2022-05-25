@@ -34,7 +34,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#assign">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Manager"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Reviewer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ReviewCommittee"/>
     </owl:ObjectProperty>
 
 
@@ -69,10 +69,18 @@
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#makeReview -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#makeReview">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Reviewer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ReviewCommittee"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Review"/>
     </owl:ObjectProperty>
 
+
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#memberOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#memberOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Reviewer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ReviewCommittee"/>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+    </owl:ObjectProperty>
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#posterSubmittedTo -->
@@ -383,7 +391,9 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Person"/>
     </owl:Class>
 
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ReviewCommittee -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ReviewCommittee"/>
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ShortPaper -->
 
