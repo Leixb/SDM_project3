@@ -22,7 +22,7 @@ $RUNNER \
     --node=PublicationMedium:JournalVolume="${DATA}/volume.csv" \
     --node=PublicationMedium:ConferenceProceeding="${DATA}/edition.csv" \
     --node=Area="${DATA}/area.csv" \
-    --edge=relatedTo=Paper=Area="${DATA}/rel_related.csv" \
+    --edge=paperRelatedTo=Paper=Area="${DATA}/rel_related.csv" \
     --edge=write=Author=Paper="${DATA}/rel_writes.csv" \
     --edge=makeReview=Author=Review="${DATA}/rel_gives_review.csv" \
     --edge=aboutPaper=Review=Paper="${DATA}/rel_review_about_paper.csv" \

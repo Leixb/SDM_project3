@@ -83,10 +83,16 @@
 
 
 
-    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#relatedTo -->
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#PaperRelatedTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#relatedTo">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#paperRelatedTo">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Area"/>
+    </owl:ObjectProperty>
+
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#PaperRelatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#venueRelatedTo">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Venue"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Area"/>
     </owl:ObjectProperty>
