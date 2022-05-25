@@ -1,32 +1,32 @@
-ID;Name
-2994;INTERSPEECH
-3018;TAG+
-3054;Dublin Core Conference
-5615;TINLAP
-7915;SIGGRAPH Courses
-10539;Discrete Methods in Epidemiology
-11349;2009 1st International Conference on Advancements in Nuclear Instrumentation, Measurement Methods and their Applications
-11772;MPREF@AAAI
-12674;SIGGRAPH Sketches
-13222;ICPS
-14794;PODC
-15748;DNA Based Computers
-17065;MIE
-17099;NEWCAS
-17103;WCAE@ISCA
-17107;Modellierung (Workshops)
-17344;Usability Professionals
-18561;EON
-20099;ACM Annual Conference
-21755;Graphs, Morphisms and Statistical Physics
-22109;CIP
-22210;EAIS
-22517;Reliability Of Computer And Communication Networks
-22771;CSCWD
-22774;SMACD
-22789;Groups and Computation
-23226;EVIA@NTCIR
-23239;INISTA
-23284;EITEC@CPSWeek
-23312;ANT/SEIT
-23607;ASIST
+ID;vTitle
+2115;TAG+
+2151;Dublin Core Conference
+3695;TINLAP
+5238;SIGGRAPH Courses
+7296;Discrete Methods in Epidemiology
+7876;2009 1st International Conference on Advancements in Nuclear Instrumentation, Measurement Methods and their Applications
+8156;MPREF@AAAI
+8816;SIGGRAPH Sketches
+9147;ICPS
+10398;PODC
+10954;DNA Based Computers
+11647;MIE
+11672;NEWCAS
+11676;WCAE@ISCA
+11680;Modellierung (Workshops)
+11850;Usability Professionals
+12726;EON
+13780;ACM Annual Conference
+14880;Graphs, Morphisms and Statistical Physics
+15158;CIP
+15236;EAIS
+15419;Reliability Of Computer And Communication Networks
+15524;CSCWD
+15527;SMACD
+15538;Groups and Computation
+15839;EVIA@NTCIR
+15852;INISTA
+15896;EITEC@CPSWeek
+15924;ANT/SEIT
+16200;ASIST
+16957;Human Factors in Computing Systems

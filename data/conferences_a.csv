@@ -1,28 +1,29 @@
-ID;Name
-110;SIGGRAPH Computer Animation Festival
-125;SIGGRAPH Computer Animation Fesitval
-223;HotNets
-265;FG
-277;DAPSE@ICSE
-830;SIGGRAPH Visual Proceedings
-845;SIGGRAPH Electronic Art and Animation Catalog
-849;SIGGRAPH Abstracts and Applications
-958;Computational Support for Discrete Mathematics
-1134;SIGGRAPH Educators Program
-1207;SIGGRAPH ASIA (Computer Animation Festival)
-1244;ISI
-1254;SIGGRAPH ASIA Art Gallery
-1282;SIGGRAPH ASIA Computer Animation Festival
-1446;TARK
-1504;DRCN
-1526;VLSIC
-1558;Modeling Paradigms and Analysis of Disease Trasmission Models
-1583;CyCon
-1635;FDG
-1787;SIGGRAPH Art Gallery
-1804;SIGGRAPH (Visual Proceedings)
-1909;SIGGRAPH Emerging Technologies
-2048;NHT@HT
-2261;SIGGRAPH (Art Show Catalog)
-2266;HLT
-2983;INLG
+ID;vTitle
+77;SIGGRAPH Computer Animation Festival
+92;SIGGRAPH Computer Animation Fesitval
+160;HotNets
+194;FG
+204;DAPSE@ICSE
+515;SIGGRAPH Visual Proceedings
+530;SIGGRAPH Electronic Art and Animation Catalog
+534;SIGGRAPH Abstracts and Applications
+568;Computational Support for Discrete Mathematics
+674;SIGGRAPH Educators Program
+708;SIGGRAPH ASIA (Computer Animation Festival)
+732;ISI
+738;SIGGRAPH ASIA Art Gallery
+748;SIGGRAPH ASIA Computer Animation Festival
+890;TARK
+948;DRCN
+970;VLSIC
+1001;Modeling Paradigms and Analysis of Disease Trasmission Models
+1026;CyCon
+1075;FDG
+1222;SIGGRAPH Art Gallery
+1239;SIGGRAPH (Visual Proceedings)
+1288;SIGGRAPH Emerging Technologies
+1344;NHT@HT
+1516;SIGGRAPH (Art Show Catalog)
+1521;HLT
+2088;INLG
+2099;INTERSPEECH

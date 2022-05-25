@@ -1,35 +1,34 @@
-ID;Name
-24439;Human Factors in Computing Systems
-25134;International Conference on Electronic Publishing
-25223;European Signal Processing Conference
-29939;Symposium on Computer Animation
-32188;SIGCPR
-32952;EVA
-33977;ISABEL
-36426;InfoSecCD
-37571;WoSQ@ICSE
-40102;SIGUCCS Small-College Conference
-41380;WGP@ICFP
-41791;Computational Models of Rationality
-43725;*SEM@NAACL-HLT
-45451;ACM-TURING
-47899;SIGGRAPH Studio Talks
-48450;PPIG
-49720;TEEM
-51078;"WSC08: Winter Simulation Conference
+ID;vTitle
+17613;International Conference on Electronic Publishing
+17710;European Signal Processing Conference
+20768;Symposium on Computer Animation
+22149;SIGCPR
+22592;EVA
+23210;ISABEL
+24586;InfoSecCD
+25264;WoSQ@ICSE
+26778;SIGUCCS Small-College Conference
+27477;WGP@ICFP
+27746;Computational Models of Rationality
+28984;*SEM@NAACL-HLT
+30070;ACM-TURING
+31627;SIGGRAPH Studio Talks
+31944;PPIG
+32718;TEEM
+33377;"WSC08: Winter Simulation Conference
 		      Miami
 		      Florida
 		    December, 2008"
-55050;AIC
-55376;PacificVis
-56309;SIGDIAL Workshop
-57205;NATO ASI CP
-57830;BUCC@ACL
-57868;MSFP@MPC
-59604;EURO-DAC
-60473;AHS
-61019;WOD
-61188;Advances in Modal Logic
-62132;DiGRA Conference
-62349;ENLG
-62404;FCP@NAACL-HLT
+35784;AIC
+36057;PacificVis
+36584;SIGDIAL Workshop
+37069;NATO ASI CP
+37368;BUCC@ACL
+37385;MSFP@MPC
+38292;EURO-DAC
+38804;AHS
+39053;WOD
+39168;Advances in Modal Logic
+39816;DiGRA Conference
+39965;ENLG
+40005;FCP@NAACL-HLT
