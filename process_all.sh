@@ -42,7 +42,7 @@ run_nix() {
     nix run '.#jar' -- "${ARGUMENTS[@]}"
 }
 
-# if RUNNER is not set run it, otherwise try to guess
+# if RUNNER is set run it, otherwise try to guess
 if [ ! -z "$RUNNER" ]; then
     "$RUNNER" "${ARGUMENTS[@]}"
 else
