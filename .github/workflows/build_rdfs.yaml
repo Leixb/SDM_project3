@@ -28,9 +28,9 @@ jobs:
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
         extraPullNames: nix-community
     - name: Build image
-      run: nix build -L .#rdfs -o papers.rdfs
+      run: nix build -L .#rdfs -o papers.rdf
 
     - uses: actions/upload-artifact@v3
       with:
-        name: papers.rdfs
-        path: papers.rdfs
+        name: papers.rdf
+        path: papers.rdf
