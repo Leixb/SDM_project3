@@ -4,19 +4,17 @@ PREFIX sdm: <http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?paperTitle
-WHERE
-    {?paper sdm:Title ?paperTitle
-    {SELECT ?paper
-    WHERE
-    	{?author sdm:pName "Chris F. Kemerer" ; sdm:write ?paper
-    	{SELECT ?paper
-    	WHERE
-    		{?paper sdm:published ?venue
-    		{SELECT ?venue
-    		WHERE
-        		{?venue rdf:type sdm:Conference ; rdfs:venueRelatedTo "database"
-                }
-             }}
-         }}
-    }}
+SELECT ?paperTitle ?paper ?venue
+WHERE {
+    sdm:Author-11052 sdm:write ?paper .
+    ?paper sdm:submittedTo ?venue .
+    ?venue sdm:venueRelatedTo ?area .
+
+    ?area sdm:aName "Database" .
+    ?paper sdm:title ?paperTitle
+
+    # We could also filter all areas containing "Data" or something
+    # more complex:
+    #?area sdm:aName ?aname .
+    #filter( regex(?aname, "Data" ))
+}

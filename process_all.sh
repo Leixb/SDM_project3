@@ -27,6 +27,8 @@ ARGUMENTS=(
     "--edge=makeReview=Author=Review=${DATA}/rel_gives_review.csv"
     "--edge=aboutPaper=Review=Paper=${DATA}/rel_review_about_paper.csv"
     "--edge=includedIn=Paper=PublicationMedium=${DATA}/rel_published.csv"
+    "--edge=venueRelatedTo=Venue=Area=${DATA}/rel_venue_related.csv"
+    "--edge=submittedTo=Paper=Venue=${DATA}/rel_submittedTo.csv"
 )
 
 # Add command line arguments if any
