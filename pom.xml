@@ -8,6 +8,7 @@
         <project.java.version>1.17</project.java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <exec.mainClass>Main</exec.mainClass>
     </properties>
 
     <build>
