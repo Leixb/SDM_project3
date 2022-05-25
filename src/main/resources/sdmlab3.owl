@@ -267,14 +267,6 @@
 
 
 
-    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ConferenceType -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ConferenceType">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Conference"/>
-    </owl:Class>
-
-
-
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#DemoPaper -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#DemoPaper">
@@ -294,7 +286,7 @@
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ExpertGroup -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ExpertGroup">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ConferenceType"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Conference"/>
     </owl:Class>
 
 
@@ -375,7 +367,7 @@
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#RegularConference -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#RegularConference">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ConferenceType"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Conference"/>
     </owl:Class>
 
 
@@ -407,7 +399,7 @@
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Symposium -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Symposium">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ConferenceType"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Conference"/>
     </owl:Class>
 
 
@@ -421,7 +413,7 @@
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Workshop -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Workshop">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ConferenceType"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Conference"/>
     </owl:Class>
 </rdf:RDF>
 
