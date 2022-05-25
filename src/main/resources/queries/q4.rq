@@ -4,12 +4,13 @@ PREFIX sdm: <http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?paperTitle ?paper ?venue
+SELECT ?paperTitle ?paper ?conference ?proceedings
 WHERE {
-    sdm:Author-11052 sdm:write ?paper .
-    ?paper sdm:submittedTo ?venue .
-    ?venue sdm:venueRelatedTo ?area .
-
+    sdm:Author-15156 sdm:write ?paper .
+    ?paper sdm:includedIn ?proceedings .
+    ?proceedings a sdm:Conference .
+    ?proceedings sdm:belongs ?conference .
+    ?conference sdm:venueRelatedTo ?area .
     ?area sdm:aName "Database" .
     ?paper sdm:title ?paperTitle
 

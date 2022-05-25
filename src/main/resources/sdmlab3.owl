@@ -98,6 +98,12 @@
     </owl:ObjectProperty>
 
 
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#belongs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#belongs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#PublicationMedium"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Venue"/>
+    </owl:ObjectProperty>
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#review -->
 

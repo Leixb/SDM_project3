@@ -29,6 +29,7 @@ ARGUMENTS=(
     "--edge=includedIn=Paper=PublicationMedium=${DATA}/rel_published.csv"
     "--edge=venueRelatedTo=Venue=Area=${DATA}/rel_venue_related.csv"
     "--edge=submittedTo=Paper=Venue=${DATA}/rel_submittedTo.csv"
+    "--edge=belongs=PublicationMedium=Venue=${DATA}/rel_belongs.csv"
 )
 
 # Add command line arguments if any
