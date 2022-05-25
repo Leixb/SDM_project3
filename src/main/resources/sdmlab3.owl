@@ -42,8 +42,8 @@
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#cHandledBy -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#cHandledBy">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Chair"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Conference"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Chair"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Conference"/>
     </owl:ObjectProperty>
 
 
@@ -60,8 +60,8 @@
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#jHandledBy -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#jHandledBy">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Editor"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Journal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Editor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Journal"/>
     </owl:ObjectProperty>
 
 
