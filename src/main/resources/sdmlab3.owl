@@ -164,24 +164,6 @@
 
 
 
-    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#pNumber -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#pNumber">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ConferenceProceeding"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-
-
-
-    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#pYear -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#pYear">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#JournalVolume"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    </owl:DatatypeProperty>
-
-
-
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#text -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#text">
@@ -209,19 +191,19 @@
 
 
 
-    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#vNumber -->
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#pubNumber -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#vNumber">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#JournalVolume"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#pubNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#PublicationMedium"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
 
 
 
-    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#vYear -->
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#pubYear -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#vYear">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#JournalVolume"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#pubYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#PublicationMedium"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
 
