@@ -1,0 +1,22 @@
+# Find all the paper written by a given author that where published in database conferences. 
+
+PREFIX sdm: <http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?paperTitle
+WHERE
+    {?paper sdm:Title ?paperTitle
+    {SELECT ?paper
+    WHERE
+    	{?author sdm:pName "Chris F. Kemerer" ; sdm:write ?paper
+    	{SELECT ?paper
+    	WHERE
+    		{?paper sdm:published ?venue
+    		{SELECT ?venue
+    		WHERE
+        		{?venue rdf:type sdm:Conference ; rdfs:venueRelatedTo "database"
+                }
+             }}
+         }}
+    }}

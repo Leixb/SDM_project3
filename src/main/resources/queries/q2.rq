@@ -1,0 +1,7 @@
+# Find all properties whose domain is Author
+
+PREFIX sdm: <http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?property
+WHERE {?property rdfs:domain sdm:Author}

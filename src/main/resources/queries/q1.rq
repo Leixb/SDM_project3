@@ -1,0 +1,6 @@
+# Find all Authors
+
+PREFIX sdm: <http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#>
+
+SELECT ?authorName
+WHERE {?Author sdm:pName ?authorName}
