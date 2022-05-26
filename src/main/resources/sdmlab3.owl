@@ -20,12 +20,17 @@
 
 
 
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#approves -->
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#givesVeredict"/>
+
+
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#approves -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#approves">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Review"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Publication"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#givesVeredict"/>
     </owl:ObjectProperty>
 
 
@@ -35,6 +40,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#rejects">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Review"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#RejectedPaper"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#givesVeredict"/>
     </owl:ObjectProperty>
 
 
