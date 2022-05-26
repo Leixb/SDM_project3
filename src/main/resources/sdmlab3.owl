@@ -103,13 +103,6 @@
     </owl:ObjectProperty>
 
 
-    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#posterSubmittedTo -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#posterSubmittedTo">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#submittedTo"/>
-    </owl:ObjectProperty>
-
-
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#PaperRelatedTo -->
 
