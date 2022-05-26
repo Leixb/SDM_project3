@@ -22,14 +22,20 @@ ARGUMENTS=(
     "--node=PublicationMedium:JournalVolume=${DATA}/volume.csv"
     "--node=PublicationMedium:ConferenceProceeding=${DATA}/edition.csv"
     "--node=Area=${DATA}/area.csv"
+    "--node=Manager=${DATA}/managers.csv"
+    "--node=ReviewCommittee=${DATA}/committees.csv"
     "--edge=paperRelatedTo=Paper=Area=${DATA}/rel_related.csv"
     "--edge=write=Author=Paper=${DATA}/rel_writes.csv"
-    "--edge=makeReview=Author=Review=${DATA}/rel_gives_review.csv"
-    "--edge=aboutPaper=Review=Paper=${DATA}/rel_review_about_paper.csv"
+    "--edge=makeReview=ReviewCommittee=Review=${DATA}/rel_makes_review.csv"
     "--edge=includedIn=Paper=PublicationMedium=${DATA}/rel_published.csv"
     "--edge=venueRelatedTo=Venue=Area=${DATA}/rel_venue_related.csv"
     "--edge=submittedTo=Paper=Venue=${DATA}/rel_submittedTo.csv"
     "--edge=belongs=PublicationMedium=Venue=${DATA}/rel_belongs.csv"
+    "--edge=handledBy=Venue=Manager=${DATA}/rel_handled_by.csv"
+    "--edge=assign=Manager=ReviewCommittee=${DATA}/rel_assigns.csv"
+    "--edge=memberOf=Reviewer=ReviewCommittee=${DATA}/rel_member_of.csv"
+    "--edge=accepts=Review=Paper=${DATA}/rel_approves.csv"
+    "--edge=rejects=Review=Paper=${DATA}/rel_rejects.csv"
 )
 
 # Add command line arguments if any

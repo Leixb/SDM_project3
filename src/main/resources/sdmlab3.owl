@@ -7,10 +7,27 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3"/>
+    
 
 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <!--
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#minQualifiedCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#minQualifiedCardinality"/>
+    
+
+
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -18,31 +35,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
-
-    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#accepts -->
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#givesVeredict"/>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#accepts -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#accepts">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#givesVeredict"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#rejects"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Review"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Publication"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#givesVeredict"/>
     </owl:ObjectProperty>
-
-
-
-    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#rejects -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#rejects">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Review"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#RejectedPaper"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#givesVeredict"/>
-    </owl:ObjectProperty>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#assign -->
@@ -51,26 +55,49 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Manager"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ReviewCommittee"/>
     </owl:ObjectProperty>
+    
 
 
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#belongs -->
 
-    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#handledBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#handledBy">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Manager"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Venue"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#belongs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#PublicationMedium"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Venue"/>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#cHandledBy -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#cHandledBy">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Chair"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Conference"/>
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#handledBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Conference"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Chair"/>
     </owl:ObjectProperty>
+    
 
+
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#givesVeredict -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#givesVeredict">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#handledBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#handledBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Venue"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Manager"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#cHandledBy"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#jHandledBy"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#includedIn -->
@@ -79,25 +106,27 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Publication"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#PublicationMedium"/>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#jHandledBy -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#jHandledBy">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Editor"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Journal"/>
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#handledBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Journal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Editor"/>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#makeReview -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#makeReview">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ReviewCommittee"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Review"/>
     </owl:ObjectProperty>
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#memberOf -->
@@ -107,31 +136,26 @@
         <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ReviewCommittee"/>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
     </owl:ObjectProperty>
+    
 
 
-
-    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#PaperRelatedTo -->
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#paperRelatedTo -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#paperRelatedTo">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Paper"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Area"/>
     </owl:ObjectProperty>
+    
 
-    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#PaperRelatedTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#venueRelatedTo">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Venue"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Area"/>
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#rejects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#rejects">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#givesVeredict"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Review"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#RejectedPaper"/>
     </owl:ObjectProperty>
-
-
-    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#belongs -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#belongs">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#PublicationMedium"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Venue"/>
-    </owl:ObjectProperty>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#submittedTo -->
@@ -140,7 +164,16 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Paper"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Venue"/>
     </owl:ObjectProperty>
+    
 
+
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#venueRelatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#venueRelatedTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Venue"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Area"/>
+    </owl:ObjectProperty>
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#write -->
@@ -149,10 +182,10 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Author"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Paper"/>
     </owl:ObjectProperty>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -160,7 +193,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#aName -->
@@ -169,7 +202,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Area"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#pName -->
@@ -178,34 +211,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
-
-
-
-    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#text -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#text">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Review"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-
-
-
-    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#title -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#title">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Paper"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-
-
-
-    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#vName -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#vName">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Venue"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#pubNumber -->
@@ -214,7 +220,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#PublicationMedium"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#pubYear -->
@@ -223,10 +229,37 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#PublicationMedium"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
+    
 
 
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#text -->
 
-    <!--
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#text">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#vName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#vName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Venue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -234,13 +267,13 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Area -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Area"/>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Author -->
@@ -249,7 +282,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Person"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Reviewer"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Chair -->
@@ -257,24 +290,35 @@
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Chair">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Manager"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Conference -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Conference">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Venue"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ExpertGroup"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#RegularConference"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Symposium"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Workshop"/>
+        </owl:disjointUnionOf>
     </owl:Class>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ConferenceProceeding -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ConferenceProceeding">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Conference"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#PublicationMedium"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#belongs"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Conference"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#DemoPaper -->
@@ -282,7 +326,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#DemoPaper">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Paper"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Editor -->
@@ -290,7 +334,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Editor">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Manager"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ExpertGroup -->
@@ -298,7 +342,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ExpertGroup">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Conference"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#FullPaper -->
@@ -306,7 +350,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#FullPaper">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Paper"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Journal -->
@@ -314,44 +358,71 @@
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Journal">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Venue"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#JournalVolume -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#JournalVolume">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Journal"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#PublicationMedium"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#belongs"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Journal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Manager -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Manager">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Person"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Chair"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Editor"/>
+        </owl:disjointUnionOf>
     </owl:Class>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Paper -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Paper"/>
-
+    <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Paper">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#DemoPaper"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#FullPaper"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Poster"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ShortPaper"/>
+        </owl:disjointUnionOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Publication"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#RejectedPaper"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Person -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Person"/>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Poster -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Poster">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Paper"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#submittedTo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Journal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Publication -->
@@ -359,7 +430,26 @@
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Publication">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Paper"/>
     </owl:Class>
+    
 
+
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#PublicationMedium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#PublicationMedium">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ConferenceProceeding"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#JournalVolume"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#RegularConference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#RegularConference">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Conference"/>
+    </owl:Class>
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#RejectedPaper -->
@@ -367,25 +457,19 @@
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#RejectedPaper">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Paper"/>
     </owl:Class>
-
-
-
-    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#PublicationMedium -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#PublicationMedium"/>
-
-    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#RegularConference -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#RegularConference">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Conference"/>
-    </owl:Class>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Review -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Review"/>
+    
 
+
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ReviewCommittee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ReviewCommittee"/>
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Reviewer -->
@@ -393,17 +477,15 @@
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Reviewer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Person"/>
     </owl:Class>
+    
 
-    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ReviewCommittee -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ReviewCommittee"/>
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ShortPaper -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#ShortPaper">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Paper"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Symposium -->
@@ -411,13 +493,18 @@
     <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Symposium">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Conference"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Venue -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Venue"/>
-
+    <owl:Class rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Venue">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Conference"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Journal"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
 
 
     <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Workshop -->
