@@ -20,14 +20,14 @@
 
 
 
-    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#approves -->
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#accepts -->
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#givesVeredict"/>
 
 
 
-    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#approves -->
+    <!-- http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#accepts -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#approves">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#accepts">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Review"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#Publication"/>
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#givesVeredict"/>
