@@ -28,9 +28,20 @@ jobs:
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
         extraPullNames: nix-community
     - name: Build image
-      run: nix build -L .#rdfs -o papers.rdf
+      run: nix build -L .#rdfs -o abox.owl
+
+    - name: Copy tbox.owl to root
+      run: cp src/main/resources/sdmlab3.owl tbox.owl
 
     - uses: actions/upload-artifact@v3
       with:
-        name: papers.rdf
-        path: papers.rdf
+        name: deliverable
+        path: |
+          tbox.owl
+          abox.owl
+          pom.xml
+          src
+          data
+          process_all.sh
+
+
