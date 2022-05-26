@@ -4,3 +4,4 @@ PREFIX sdm: <http://www.semanticweb.org/emmasalvan/ontologies/2022/4/sdmlab3#>
 
 SELECT ?authorName
 WHERE {?Author sdm:pName ?authorName}
+LIMIT 100 # Limit to 100 entries to prevent large result
