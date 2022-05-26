@@ -8,7 +8,7 @@ SELECT ?paperTitle ?paper ?conference ?proceedings
 WHERE {
     sdm:Author-15156 sdm:write ?paper .
     ?paper sdm:includedIn ?proceedings .
-    ?proceedings a sdm:Conference .
+    ?proceedings a sdm:ConferenceProceeding .
     ?proceedings sdm:belongs ?conference .
     ?conference sdm:venueRelatedTo ?area .
     ?area sdm:aName "Database" .
